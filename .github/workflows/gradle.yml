@@ -30,7 +30,7 @@ jobs:
       uses: risfeng/docker-image-build-push-action@v1.0
       with:
         registry_url: 'docker.io'
-        repository_name: 'demo-app'
+        repository_name: '${{ secrets.DOCKERHUB_USERNAME }}/demo-app'
         user_name: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         image_version: 'v1.0'
