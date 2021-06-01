@@ -15,7 +15,7 @@ public class DemoAppApplication {
 	@PostConstruct
     public void init()
     {
-        Logger log = LoggerFactory.getLogger(App.class);
+        Logger log = LoggerFactory.getLogger(DemoAppApplication.class);
         log.info("Java app started");
     }
 
