@@ -27,7 +27,7 @@ jobs:
       run: ./gradlew build
     - name: Build Docker Image
       id: buildAndPushImage
-      uses: risfeng/docker-image-build-push-action@v1.0
+      uses: Abhishek-070/Dockerhub-Build-Push@v1.0
       with:
         registry_url: 'docker.io'
         repository_name: '${{ secrets.DOCKERHUB_USERNAME }}/demo-app'
